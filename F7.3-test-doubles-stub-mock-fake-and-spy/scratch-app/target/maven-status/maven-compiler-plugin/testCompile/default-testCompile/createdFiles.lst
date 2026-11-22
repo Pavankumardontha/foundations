@@ -1,0 +1,16 @@
+com/zenith/doubles/L5FakeTest.class
+com/zenith/doubles/L1StandInSpeedTest.class
+com/zenith/doubles/L9AllFourTest.class
+com/zenith/doubles/L7ChoosingTest.class
+com/zenith/doubles/MockHoldRepository.class
+com/zenith/doubles/FakeHoldRepository.class
+com/zenith/doubles/L4StateVsInteractionTest.class
+com/zenith/doubles/L6SpyTest.class
+com/zenith/doubles/L8BoundaryTest.class
+com/zenith/doubles/SpyHoldRepository.class
+com/zenith/doubles/L2StubTest.class
+com/zenith/doubles/StubHoldRepository.class
+com/zenith/doubles/MockPaymentGateway.class
+com/zenith/doubles/L3MockTest.class
+com/zenith/doubles/L1DatabaseSpeedTest.class
+com/zenith/doubles/StubMissingHoldRepository.class

@@ -1,0 +1,4 @@
+zenith:
+  hold:
+    ttl: PT10M
+    max-seats-per-order: 8

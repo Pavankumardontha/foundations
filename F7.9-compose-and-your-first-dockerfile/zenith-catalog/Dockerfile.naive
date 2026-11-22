@@ -1,0 +1,7 @@
+FROM maven:3.9-eclipse-temurin-21
+WORKDIR /src
+COPY pom.xml .
+RUN mvn -q dependency:go-offline
+COPY src ./src
+RUN mvn -q package -DskipTests
+ENTRYPOINT ["java", "-jar", "target/zenith-catalog.jar"]

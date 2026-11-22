@@ -1,0 +1,5 @@
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+RUN sleep 5 && echo "pretend: 200MB of tools downloaded" > /tools.txt
+COPY target/zenith-catalog.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]

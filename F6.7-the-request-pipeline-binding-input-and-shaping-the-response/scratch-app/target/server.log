@@ -1,0 +1,57 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-01T04:24:46.357+05:30  INFO 57488 --- [           main] com.zenith.events.EventsApplication      : Starting EventsApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 57488 (/Users/pavankumar/projects/foundations/F6.7-the-request-pipeline-binding-input-and-shaping-the-response/scratch-app/target/request-pipeline-scratch-0.0.1-SNAPSHOT.jar started by pavankumar in /Users/pavankumar/projects/foundations/F6.7-the-request-pipeline-binding-input-and-shaping-the-response/scratch-app)
+2026-11-01T04:24:46.358+05:30  INFO 57488 --- [           main] com.zenith.events.EventsApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-11-01T04:24:46.683+05:30  INFO 57488 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-01T04:24:46.689+05:30  INFO 57488 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-01T04:24:46.690+05:30  INFO 57488 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-11-01T04:24:46.702+05:30  INFO 57488 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-01T04:24:46.702+05:30  INFO 57488 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 322 ms
+2026-11-01T04:24:46.776+05:30 DEBUG 57488 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2026-11-01T04:24:46.804+05:30 DEBUG 57488 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-11-01T04:24:46.811+05:30 DEBUG 57488 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-11-01T04:24:46.827+05:30 DEBUG 57488 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-11-01T04:24:46.852+05:30  INFO 57488 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-01T04:24:46.860+05:30  INFO 57488 --- [           main] com.zenith.events.EventsApplication      : Started EventsApplication in 0.701 seconds (process running for 0.904)
+2026-11-01T04:24:51.993+05:30  INFO 57488 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-01T04:24:51.994+05:30  INFO 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-01T04:24:51.994+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-11-01T04:24:51.994+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-11-01T04:24:51.994+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-11-01T04:24:51.995+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@140d3ee6
+2026-11-01T04:24:51.995+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@50b11856
+2026-11-01T04:24:51.995+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-11-01T04:24:51.995+05:30  INFO 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-01T04:24:51.999+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/events/0f14d0ab-9605-4a62-a9e4-5ed26688389b", parameters={}
+2026-11-01T04:24:52.006+05:30 DEBUG 57488 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.zenith.events.EventController#byId(UUID)
+2026-11-01T04:24:52.047+05:30 DEBUG 57488 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : No match for [application/xml], supported: [application/json, application/*+json]
+2026-11-01T04:24:52.049+05:30  WARN 57488 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2026-11-01T04:24:52.050+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 406 NOT_ACCEPTABLE
+2026-11-01T04:24:52.052+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2026-11-01T04:24:52.053+05:30 DEBUG 57488 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-11-01T04:24:52.057+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : No match for [application/xml], supported: [application/json, application/*+json]
+2026-11-01T04:24:52.058+05:30 DEBUG 57488 --- [nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#mediaTypeNotAcceptable(HttpServletRequest)
+2026-11-01T04:24:52.059+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/xml', given [application/xml] and supported [text/plain, */*, application/json, application/*+json]
+2026-11-01T04:24:52.059+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2026-11-01T04:24:52.059+05:30 DEBUG 57488 --- [nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2026-11-01T04:24:52.060+05:30 DEBUG 57488 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 406
+2026-11-01T04:24:52.073+05:30 DEBUG 57488 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/events/0f14d0ab-9605-4a62-a9e4-5ed26688389b", parameters={}
+2026-11-01T04:24:52.073+05:30 DEBUG 57488 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.zenith.events.EventController#byId(UUID)
+2026-11-01T04:24:52.073+05:30 DEBUG 57488 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+2026-11-01T04:24:52.075+05:30 DEBUG 57488 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [EventResponse[id=0f14d0ab-9605-4a62-a9e4-5ed26688389b, name=Indie Night, venue=Blue Note Hall]]
+2026-11-01T04:24:52.081+05:30 DEBUG 57488 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-11-01T04:24:52.090+05:30 DEBUG 57488 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/events/0f14d0ab-9605-4a62-a9e4-5ed26688389b", parameters={}
+2026-11-01T04:24:52.090+05:30 DEBUG 57488 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.zenith.events.EventController#byId(UUID)
+2026-11-01T04:24:52.091+05:30 DEBUG 57488 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-11-01T04:24:52.091+05:30 DEBUG 57488 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [EventResponse[id=0f14d0ab-9605-4a62-a9e4-5ed26688389b, name=Indie Night, venue=Blue Note Hall]]
+2026-11-01T04:24:52.091+05:30 DEBUG 57488 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-11-01T04:25:00.238+05:30  INFO 57488 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-01T04:25:00.241+05:30  INFO 57488 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

@@ -1,0 +1,8 @@
+com/zenith/autoconfig/NoteRepository.class
+com/zenith/autoconfig/AutoconfigApplication.class
+com/zenith/autoconfig/NoteCounter.class
+com/zenith/autoconfig/ClockController.class
+com/zenith/autoconfig/Note.class
+com/zenith/autoconfig/JsonConfig.class
+com/zenith/autoconfig/PresenceDemoConfig.class
+com/zenith/autoconfig/ClockController$Now.class

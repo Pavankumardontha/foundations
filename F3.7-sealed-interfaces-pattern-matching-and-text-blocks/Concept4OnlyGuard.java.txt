@@ -1,0 +1,20 @@
+import java.util.List;
+
+public class Concept4OnlyGuard {
+
+    sealed interface HoldResult permits Granted, Rejected, PartiallyGranted {}
+
+    record Granted(String holdId, List<String> seatIds) implements HoldResult {}
+    record Rejected(String reason) implements HoldResult {}
+    record PartiallyGranted(String holdId, List<String> seatIds, int missing) implements HoldResult {}
+
+    // Only a GUARDED case for PartiallyGranted — no unguarded one.
+    // What about a PartiallyGranted with missing() <= 5? Nothing matches it.
+    static String describe(HoldResult r) {
+        return switch (r) {
+            case Granted g    -> "granted";
+            case Rejected rej -> "rejected";
+            case PartiallyGranted p when p.missing() > 5 -> "escalate";
+        };
+    }
+}

@@ -1,0 +1,5 @@
+com/zenith/events/CreateEventRequest.class
+com/zenith/events/EventResponse.class
+com/zenith/events/PingController.class
+com/zenith/events/EventController.class
+com/zenith/events/EventsApplication.class

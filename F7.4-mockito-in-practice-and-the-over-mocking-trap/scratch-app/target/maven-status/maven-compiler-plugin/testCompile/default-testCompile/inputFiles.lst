@@ -1,0 +1,12 @@
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/FakeHoldRepository.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L10OverMockedControllerTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L11FakeVsMockTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L1MockitoIsHereTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L2DefaultAnswersTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L3StubbingTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L4SeatHoldServiceUnitTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L5MatchersTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L6VerifyTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L7ArgumentCaptorTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L8ThenThrowTest.java
+/Users/pavankumar/projects/foundations/F7.4-mockito-in-practice-and-the-over-mocking-trap/scratch-app/src/test/java/com/zenith/holds/L9StrictStubbingTest.java

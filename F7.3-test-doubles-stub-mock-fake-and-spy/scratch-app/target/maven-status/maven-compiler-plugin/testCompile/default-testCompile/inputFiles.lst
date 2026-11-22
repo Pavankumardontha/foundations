@@ -1,0 +1,16 @@
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/FakeHoldRepository.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L1DatabaseSpeedTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L1StandInSpeedTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L2StubTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L3MockTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L4StateVsInteractionTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L5FakeTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L6SpyTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L7ChoosingTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L8BoundaryTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/L9AllFourTest.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/MockHoldRepository.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/MockPaymentGateway.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/SpyHoldRepository.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/StubHoldRepository.java
+/Users/pavankumar/projects/foundations/F7.3-test-doubles-stub-mock-fake-and-spy/scratch-app/src/test/java/com/zenith/doubles/StubMissingHoldRepository.java

@@ -1,0 +1,17 @@
+# Subtask 2: tell Spring where the database is and how to log in.
+# Spring reads these three values at startup and builds the HikariCP pool from them.
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zenith
+    username: postgres
+    password: dev
+
+  # F5.11 subtask C: the SQL log - on BEFORE the first JPA query, and it stays on
+  # for the whole of Stage F. This is not a debugging step; it is how we work.
+  jpa:
+    show-sql: true          # Spring's switch: print every statement Hibernate issues
+    hibernate:
+      ddl-auto: validate    # F5.11 subtask I: Hibernate may look at the schema, never touch it
+    properties:
+      hibernate:
+        format_sql: true    # Hibernate's knob: pretty-print those statements

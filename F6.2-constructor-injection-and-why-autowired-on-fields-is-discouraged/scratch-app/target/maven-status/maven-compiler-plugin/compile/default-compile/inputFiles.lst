@@ -1,0 +1,6 @@
+/Users/pavankumar/projects/foundations/F6.2-constructor-injection-and-why-autowired-on-fields-is-discouraged/scratch-app/src/main/java/com/zenith/holds/HoldRepository.java
+/Users/pavankumar/projects/foundations/F6.2-constructor-injection-and-why-autowired-on-fields-is-discouraged/scratch-app/src/main/java/com/zenith/holds/HoldsApplication.java
+/Users/pavankumar/projects/foundations/F6.2-constructor-injection-and-why-autowired-on-fields-is-discouraged/scratch-app/src/main/java/com/zenith/holds/InMemoryHoldRepository.java
+/Users/pavankumar/projects/foundations/F6.2-constructor-injection-and-why-autowired-on-fields-is-discouraged/scratch-app/src/main/java/com/zenith/holds/OrderService.java
+/Users/pavankumar/projects/foundations/F6.2-constructor-injection-and-why-autowired-on-fields-is-discouraged/scratch-app/src/main/java/com/zenith/holds/SeatHoldService.java
+/Users/pavankumar/projects/foundations/F6.2-constructor-injection-and-why-autowired-on-fields-is-discouraged/scratch-app/src/main/java/com/zenith/holds/SeatLedger.java

@@ -1,0 +1,16 @@
+# Where the database is and how to log in - same local Postgres as Stage F5.
+# The connection pool recipe reads these three values.
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zenith
+    username: postgres
+    password: dev
+
+# Lesson 13: actuator exposure is OPT-IN. Out of the box only health answers
+# over HTTP. This line is the opt-in for the five endpoints the task needs.
+# Security note: these describe the app in detail - never public without auth.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,beans,configprops,conditions

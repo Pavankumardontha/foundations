@@ -1,0 +1,14 @@
+public class Doubt5ABroken {
+
+    sealed interface HoldResult permits Granted, Rejected {}
+    record Granted(String holdId) implements HoldResult {}
+    record Rejected(String reason) implements HoldResult {}
+
+    public static void main(String[] args) {
+        HoldResult r = new Rejected("sold out");
+
+        // The object IS a Rejected. But the variable's type is HoldResult.
+        // Can we call reason() through it?
+        System.out.println(r.reason());
+    }
+}

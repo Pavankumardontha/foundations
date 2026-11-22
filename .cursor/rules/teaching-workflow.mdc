@@ -1,0 +1,47 @@
+---
+description: How to teach study tasks (F-series) and document them in the task README
+alwaysApply: true
+---
+
+# Teaching workflow for study tasks
+
+The user is learning Java task by task (F2.x, F3.x, ...). Notes live in a markdown README per task
+(F3.2 is appended to `F3.1-generics-the-problem-they-solve/generics.md`).
+
+## Order of work
+
+1. Teach **one concept at a time, in chat first**. Never teach several concepts at once.
+2. Wait for the user's doubts and answer them in chat.
+3. Only write to the README when the user says the concept is clear, or explicitly asks.
+   "Go to next" (or similar) counts as confirmation: document the current lesson in the
+   README first, then teach the next one.
+4. When documenting a lesson, always include its understanding-check questions **with full
+   answers** in the README, even if the user did not answer them in chat.
+5. Then teach the next concept, again in chat first.
+
+## How to teach
+
+- Start from basics, in simple language, with small, concrete examples.
+- Use plain, simple words everywhere. No fancy vocabulary. When a hard idea comes up,
+  slow down and explain it in detail, step by step, as if to a complete beginner.
+- Compile and run every Java example (Java 21) before showing it; show real output and real error
+  messages, and decode errors in plain English.
+- Make each explanation **self-contained**. Do NOT point to other concepts by number
+  ("see Concept 4", "F3.1 Concept 2"). The user only has what is taught in the current message.
+  If an older idea is needed, re-explain it briefly in place.
+
+## Documenting doubts
+
+- Every doubt the user raises goes into the README too, under a `### Your doubts` section at the
+  end of that concept: quote the doubt, then give the full answer with examples.
+- Keep README style consistent: steps, code blocks with output, tables decoding errors, summary.
+
+## Hands-on subtask steps
+
+- The user completes hands-on subtasks themselves on a second laptop. Assume that laptop has
+  nothing installed.
+- Every lesson that maps to a subtask must end with a **"Do it yourself"** section: exact
+  commands in order, expected output (success and failure), any install/setup steps needed,
+  and a "done when" check.
+- Put the same "Do it yourself" steps into the README when documenting the lesson, so the
+  README alone is enough to complete the subtask on another machine.

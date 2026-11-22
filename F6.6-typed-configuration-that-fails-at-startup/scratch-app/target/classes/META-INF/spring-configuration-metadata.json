@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "zenith.hold",
+      "type": "com.zenith.holds.HoldProperties",
+      "sourceType": "com.zenith.holds.HoldProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "zenith.hold.max-seats-per-order",
+      "type": "java.lang.Integer",
+      "description": "most seats one order may hold at once",
+      "sourceType": "com.zenith.holds.HoldProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "zenith.hold.ttl",
+      "type": "java.time.Duration",
+      "description": "how long a seat hold lasts before it expires",
+      "sourceType": "com.zenith.holds.HoldProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

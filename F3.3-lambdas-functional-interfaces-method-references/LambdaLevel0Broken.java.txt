@@ -1,0 +1,8 @@
+// Why the variable's TYPE matters: a lambda cannot figure out its own type.
+
+public class LambdaLevel0Broken {
+    public static void main(String[] args) {
+        var f = rowNumber -> rowNumber <= 3;      // ERROR: var has nothing to infer from
+        Object g = rowNumber -> rowNumber <= 3;   // ERROR: Object is not a one-method interface
+    }
+}

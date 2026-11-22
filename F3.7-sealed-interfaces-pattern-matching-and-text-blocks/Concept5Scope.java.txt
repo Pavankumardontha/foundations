@@ -1,0 +1,17 @@
+import java.util.List;
+
+public class Concept5Scope {
+
+    sealed interface HoldResult permits Granted, Rejected, PartiallyGranted {}
+
+    record Granted(String holdId, List<String> seatIds) implements HoldResult {}
+    record Rejected(String reason) implements HoldResult {}
+    record PartiallyGranted(String holdId, List<String> seatIds, int missing) implements HoldResult {}
+
+    static void demo(HoldResult r) {
+        if (r instanceof Rejected rej) {
+            System.out.println(rej.reason());        // fine: r is proven to be a Rejected here
+        }
+        System.out.println(rej.reason());            // ERROR: rej does not exist out here
+    }
+}

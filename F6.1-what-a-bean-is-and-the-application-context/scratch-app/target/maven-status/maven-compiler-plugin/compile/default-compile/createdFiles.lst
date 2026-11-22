@@ -1,0 +1,8 @@
+com/zenith/catalog/EventRepository.class
+com/zenith/catalog/EventService.class
+com/zenith/catalog/EventController.class
+com/zenith/catalog/CatalogApplication.class
+com/zenith/catalog/BeanLister.class
+com/zenith/catalog/WiringAttempt.class
+com/zenith/catalog/JdbcEventRepository.class
+com/zenith/catalog/FakeEventRepository.class

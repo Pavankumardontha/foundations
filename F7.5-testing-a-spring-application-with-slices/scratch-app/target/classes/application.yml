@@ -1,0 +1,5 @@
+# Quiet logs: in F7.5 we read startup times, so the noise from F6.8's
+# debug logging would bury the lines we care about.
+logging:
+  level:
+    org.springframework.web: info

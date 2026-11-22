@@ -1,0 +1,15 @@
+com/zenith/scopes/TieredPricingRule.class
+com/zenith/scopes/GroupPricingRule.class
+com/zenith/scopes/QuoteService.class
+com/zenith/scopes/PlatformConfig.class
+com/zenith/scopes/PlatformController$PlatformReport.class
+com/zenith/scopes/FlatPricingRule.class
+com/zenith/scopes/SeatHoldService.class
+com/zenith/scopes/SharedCounterDemo.class
+com/zenith/scopes/PricingRule.class
+com/zenith/scopes/PaymentProperties.class
+com/zenith/scopes/CallCounterService.class
+com/zenith/scopes/CounterController.class
+com/zenith/scopes/PlatformController.class
+com/zenith/scopes/ScopesApplication.class
+com/zenith/scopes/QuoteController.class

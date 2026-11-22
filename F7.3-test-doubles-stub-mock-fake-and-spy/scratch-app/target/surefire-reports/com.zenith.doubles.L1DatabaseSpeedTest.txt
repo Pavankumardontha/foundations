@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.zenith.doubles.L1DatabaseSpeedTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.011 s -- in com.zenith.doubles.L1DatabaseSpeedTest

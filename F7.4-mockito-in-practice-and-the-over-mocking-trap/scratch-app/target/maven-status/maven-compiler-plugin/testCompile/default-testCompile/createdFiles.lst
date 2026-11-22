@@ -1,0 +1,14 @@
+com/zenith/holds/L5MatchersTest.class
+com/zenith/holds/L4SeatHoldServiceUnitTest.class
+com/zenith/holds/L10OverMockedControllerTest.class
+com/zenith/holds/L1MockitoIsHereTest.class
+com/zenith/holds/L9StrictStubbingTest.class
+com/zenith/holds/L6VerifyTest.class
+com/zenith/holds/L8ThenThrowTest.class
+com/zenith/holds/L11FakeVsMockTest.class
+com/zenith/holds/L2DefaultAnswersTest.class
+com/zenith/holds/L7ArgumentCaptorTest.class
+com/zenith/holds/FakeHoldRepository.class
+com/zenith/holds/L2DefaultAnswersTest$Gadget.class
+com/zenith/holds/L5MatchersTest$SeatMap.class
+com/zenith/holds/L3StubbingTest.class

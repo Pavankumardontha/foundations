@@ -1,0 +1,21 @@
+import java.util.List;
+
+public class Concept4Dominated {
+
+    sealed interface HoldResult permits Granted, Rejected, PartiallyGranted {}
+
+    record Granted(String holdId, List<String> seatIds) implements HoldResult {}
+    record Rejected(String reason) implements HoldResult {}
+    record PartiallyGranted(String holdId, List<String> seatIds, int missing) implements HoldResult {}
+
+    // The unguarded case comes FIRST — it catches every PartiallyGranted,
+    // so the guarded case below it can never be reached.
+    static String describe(HoldResult r) {
+        return switch (r) {
+            case Granted g    -> "granted";
+            case Rejected rej -> "rejected";
+            case PartiallyGranted p                      -> "partial";
+            case PartiallyGranted p when p.missing() > 5 -> "escalate";
+        };
+    }
+}

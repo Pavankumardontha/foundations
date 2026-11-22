@@ -1,0 +1,17 @@
+import java.util.List;
+
+sealed interface HoldResult permits Granted, Rejected, PartiallyGranted {}
+
+record Granted(String holdId, List<String> seatIds) implements HoldResult {}
+record Rejected(String reason) implements HoldResult {}
+record PartiallyGranted(String holdId, List<String> seatIds, int missing) implements HoldResult {}
+
+// The break-it-on-purpose step: a fourth record that implements HoldResult
+// but is NOT listed in the permits clause above.
+record Expired(String holdId) implements HoldResult {}
+
+public class Concept1Broken {
+    public static void main(String[] args) {
+        System.out.println("this will never compile");
+    }
+}

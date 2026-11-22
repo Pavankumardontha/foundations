@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.zenith.testing.ThrowTempTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! -- in com.zenith.testing.ThrowTempTest
+com.zenith.testing.ThrowTempTest.naiveRejectsNegativeAmount -- Time elapsed: 0.015 s <<< ERROR!
+java.lang.IllegalArgumentException: amount must be >= 0, was -1.00
+	at com.zenith.testing.Money.<init>(Money.java:17)
+	at com.zenith.testing.ThrowTempTest.naiveRejectsNegativeAmount(ThrowTempTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

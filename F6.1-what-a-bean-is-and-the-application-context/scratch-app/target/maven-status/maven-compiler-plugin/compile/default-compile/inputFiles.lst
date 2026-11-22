@@ -1,0 +1,8 @@
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/BeanLister.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/CatalogApplication.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/EventController.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/EventRepository.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/EventService.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/FakeEventRepository.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/JdbcEventRepository.java
+/Users/pavankumar/projects/foundations/F6.1-what-a-bean-is-and-the-application-context/scratch-app/src/main/java/com/zenith/catalog/WiringAttempt.java

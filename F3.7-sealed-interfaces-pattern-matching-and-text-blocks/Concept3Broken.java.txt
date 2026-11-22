@@ -1,0 +1,19 @@
+import java.util.List;
+
+public class Concept3Broken {
+
+    sealed interface HoldResult permits Granted, Rejected, PartiallyGranted {}
+
+    record Granted(String holdId, List<String> seatIds) implements HoldResult {}
+    record Rejected(String reason) implements HoldResult {}
+    record PartiallyGranted(String holdId, List<String> seatIds, int missing) implements HoldResult {}
+
+    static String describe(HoldResult r) {
+        return switch (r) {
+            // Granted has TWO components; the pattern names only one.
+            case Granted(String id)                                -> "granted under hold " + id;
+            case Rejected(String reason)                           -> "rejected: " + reason;
+            case PartiallyGranted(var id, var seats, int missing)  -> "missing " + missing;
+        };
+    }
+}

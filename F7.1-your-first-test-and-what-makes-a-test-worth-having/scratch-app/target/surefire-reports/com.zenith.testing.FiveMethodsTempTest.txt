@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: com.zenith.testing.FiveMethodsTempTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.057 s <<< FAILURE! -- in com.zenith.testing.FiveMethodsTempTest
+com.zenith.testing.FiveMethodsTempTest.sizeCheckedTheWeakWay -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: 4
+ but was: 3
+	at com.zenith.testing.FiveMethodsTempTest.sizeCheckedTheWeakWay(FiveMethodsTempTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.zenith.testing.FiveMethodsTempTest.containsChecksMembership -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting ListN:
+  ["GBP", "EUR", "INR"]
+to contain:
+  ["KWD"]
+but could not find the following element(s):
+  ["KWD"]
+
+	at com.zenith.testing.FiveMethodsTempTest.containsChecksMembership(FiveMethodsTempTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.zenith.testing.FiveMethodsTempTest.hasSizeChecksElementCount -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size: 4 but was: 3 in:
+["GBP", "EUR", "INR"]
+	at com.zenith.testing.FiveMethodsTempTest.hasSizeChecksElementCount(FiveMethodsTempTest.java:41)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

@@ -1,0 +1,12 @@
+import java.util.List;
+
+sealed interface HoldResult2 permits Granted2 {}
+
+record Granted2(String holdId, List<String> seatIds) implements HoldResult2 {}
+
+// Try to subclass a record. Records are implicitly final, so this must fail.
+class SuperGranted extends Granted2 {
+    SuperGranted() { super("x", List.of()); }
+}
+
+public class Doubt1RecordFinal {}

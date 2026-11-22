@@ -1,0 +1,7 @@
+# Subtask 2: tell Spring where the database is and how to log in.
+# Spring reads these three values at startup and builds the HikariCP pool from them.
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zenith
+    username: postgres
+    password: dev

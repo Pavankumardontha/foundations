@@ -1,0 +1,15 @@
+// Concept 2, broken on purpose: a SECOND abstract method is added.
+// With @FunctionalInterface present, the compiler refuses to compile this.
+// (File kept as .txt so it does not break the folder's compilation; rename to .java to try it.)
+
+@FunctionalInterface
+interface BrokenRule {
+    int discountedPrice(int originalPrice);
+    boolean appliesTo(int seatRow);          // second abstract method -> compile error
+}
+
+public class Concept2Broken {
+    public static void main(String[] args) {
+        BrokenRule r = price -> price / 2;   // which method would this lambda implement?
+    }
+}

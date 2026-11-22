@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.zenith.testing.ScaleTempTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.045 s <<< FAILURE! -- in com.zenith.testing.ScaleTempTest
+com.zenith.testing.ScaleTempTest.checkedWithIsEqualTo -- Time elapsed: 0.034 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: 15.00
+ but was: 15.0
+	at com.zenith.testing.ScaleTempTest.checkedWithIsEqualTo(ScaleTempTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

@@ -1,0 +1,18 @@
+public class Concept2Broken {
+
+    record Money(long amountInPaise, String currency) {
+        // Attempt 1: a setter INSIDE the record, writing to the field
+        void setAmount(long newAmount) {
+            this.amountInPaise = newAmount;
+        }
+    }
+
+    public static void main(String[] args) {
+        Money price = new Money(450000, "INR");
+
+        // Attempt 2: reassign the component from OUTSIDE
+        price.amountInPaise = 0;
+
+        System.out.println(price);
+    }
+}

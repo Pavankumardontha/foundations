@@ -1,0 +1,26 @@
+import java.util.List;
+
+public class Concept2Broken {
+
+    // The business grew: holds can now expire. Expired is added to the permits
+    // list and as a record — but the switch below was NOT updated.
+    sealed interface HoldResult permits Granted, Rejected, PartiallyGranted, Expired {}
+
+    record Granted(String holdId, List<String> seatIds) implements HoldResult {}
+    record Rejected(String reason) implements HoldResult {}
+    record PartiallyGranted(String holdId, List<String> seatIds, int missing) implements HoldResult {}
+    record Expired(String holdId) implements HoldResult {}
+
+    static String describe(HoldResult r) {
+        return switch (r) {   // <-- compiler must reject this now
+            case Granted g          -> "granted: hold " + g.holdId() + " for seats " + g.seatIds();
+            case Rejected rej       -> "rejected: " + rej.reason();
+            case PartiallyGranted p -> "partial: hold " + p.holdId() + ", got " + p.seatIds()
+                                       + ", still missing " + p.missing();
+        };
+    }
+
+    public static void main(String[] args) {
+        System.out.println(describe(new Expired("H-103")));
+    }
+}

@@ -1,0 +1,12 @@
+com/zenith/events/L11RepositorySliceTest.class
+com/zenith/events/L8WebSlice404Test.class
+com/zenith/events/L10ErrorShapeTest.class
+com/zenith/events/L1PlainJUnitTest$1.class
+com/zenith/events/L4FullContext404Test.class
+com/zenith/events/L6BeanCountTest.class
+com/zenith/events/L13EndToEndTest.class
+com/zenith/events/L1PlainJUnitTest.class
+com/zenith/events/L3MockMvcTest.class
+com/zenith/events/L2FullContextStartsTest.class
+com/zenith/events/L5MockitoBasicsTest.class
+com/zenith/events/L8SliceBeanCountTest.class

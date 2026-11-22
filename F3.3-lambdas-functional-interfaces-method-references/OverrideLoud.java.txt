@@ -1,0 +1,21 @@
+// WITH @Override: the same typo is caught at compile time.
+
+class Animal2 {
+    String sound() {
+        return "...generic animal sound...";
+    }
+}
+
+class Dog2 extends Animal2 {
+    @Override                    // "I claim this overrides a parent method — please verify"
+    String Sound() {             // same typo as before
+        return "Woof!";
+    }
+}
+
+public class OverrideLoud {
+    public static void main(String[] args) {
+        Animal2 a = new Dog2();
+        System.out.println(a.sound());
+    }
+}

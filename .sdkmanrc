@@ -1,0 +1,2 @@
+# Pin the exact Java this project builds with. Activate with: sdk env
+java=21.0.13.1+2-tem

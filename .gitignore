@@ -1,0 +1,2 @@
+# Local credentials for compose - each machine keeps its own, never committed
+deploy/compose/.env

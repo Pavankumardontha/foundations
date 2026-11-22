@@ -1,0 +1,14 @@
+// Concept 6, broken on purpose: a lambda tries to change a captured local variable.
+// (Kept as .txt so the folder still compiles; rename to .java to reproduce.)
+
+import java.util.List;
+
+public class EffectivelyFinalBroken {
+    public static void main(String[] args) {
+        List<String> names = List.of("Asha", "Ravi", "Meena");
+
+        int counter = 0;                       // a local variable
+        names.forEach(name -> counter++);      // lambda tries to change it -> compile error
+        System.out.println(counter);
+    }
+}

@@ -1,0 +1,14 @@
+# Same local Postgres and the same zenith database as Stage F5.
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zenith
+    username: postgres
+    password: dev
+
+  jpa:
+    show-sql: true          # print every SQL statement Hibernate sends - on for the whole task
+    hibernate:
+      ddl-auto: validate    # Hibernate checks the schema at startup, never changes it
+    properties:
+      hibernate:
+        format_sql: true    # pretty-print those statements

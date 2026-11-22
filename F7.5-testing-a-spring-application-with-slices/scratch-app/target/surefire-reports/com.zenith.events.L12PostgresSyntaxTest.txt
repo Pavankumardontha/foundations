@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: com.zenith.events.L12PostgresSyntaxTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.829 s <<< FAILURE! -- in com.zenith.events.L12PostgresSyntaxTest
+com.zenith.events.L12PostgresSyntaxTest.postgresUpsertSyntaxRunsOnTheEmbeddedDatabase -- Time elapsed: 0.101 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Syntax error in SQL statement "insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) [*]on conflict (id) do nothing"; SQL statement:
+insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) on conflict (id) do nothing [42000-232]] [insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) on conflict (id) do nothing]; SQL [insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) on conflict (id) do nothing]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at com.zenith.events.$Proxy122.insertIgnoringDuplicates(Unknown Source)
+	at com.zenith.events.L12PostgresSyntaxTest.postgresUpsertSyntaxRunsOnTheEmbeddedDatabase(L12PostgresSyntaxTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Syntax error in SQL statement "insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) [*]on conflict (id) do nothing"; SQL statement:
+insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) on conflict (id) do nothing [42000-232]] [insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) on conflict (id) do nothing]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:191)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:81)
+	at org.hibernate.query.sql.internal.NativeNonSelectQueryPlanImpl.lambda$executeUpdate$0(NativeNonSelectQueryPlanImpl.java:82)
+	at org.hibernate.sql.exec.internal.StandardJdbcMutationExecutor.execute(StandardJdbcMutationExecutor.java:67)
+	at org.hibernate.query.sql.internal.NativeNonSelectQueryPlanImpl.executeUpdate(NativeNonSelectQueryPlanImpl.java:76)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doExecuteUpdate(NativeQueryImpl.java:975)
+	at org.hibernate.query.spi.AbstractQuery.executeUpdate(AbstractQuery.java:651)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:269)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:95)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:160)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:148)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:170)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) [*]on conflict (id) do nothing"; SQL statement:
+insert into events (id, name, venue_id, sales_open_at, starts_at, capacity) values (?, ?, ?, ?, ?, ?) on conflict (id) do nothing [42000-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
+	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:315)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:96)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	... 30 more
+

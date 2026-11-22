@@ -1,0 +1,5 @@
+com/zenith/holds/SeatHoldService.class
+META-INF/spring-configuration-metadata.json
+com/zenith/holds/HoldProperties.class
+com/zenith/holds/HoldExpiryNotifier.class
+com/zenith/holds/HoldsApplication.class

@@ -1,0 +1,4 @@
+# Make the invisible pipeline visible: Spring MVC logs each request's journey.
+logging:
+  level:
+    org.springframework.web: debug

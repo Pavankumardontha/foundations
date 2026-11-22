@@ -1,0 +1,42 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-01T18:00:38.611+05:30  INFO 61345 --- [           main] com.zenith.events.EventsApplication      : Starting EventsApplication v0.0.1-SNAPSHOT using Java 21.0.11 with PID 61345 (/Users/pavankumar/projects/foundations/F6.8-validation-one-error-shape-and-a-request-log/scratch-app/target/validation-scratch-0.0.1-SNAPSHOT.jar started by pavankumar in /Users/pavankumar/projects/foundations/F6.8-validation-one-error-shape-and-a-request-log/scratch-app)
+2026-11-01T18:00:38.612+05:30  INFO 61345 --- [           main] com.zenith.events.EventsApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-11-01T18:00:39.053+05:30  INFO 61345 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-01T18:00:39.062+05:30  INFO 61345 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-01T18:00:39.062+05:30  INFO 61345 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-11-01T18:00:39.084+05:30  INFO 61345 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-01T18:00:39.085+05:30  INFO 61345 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 445 ms
+2026-11-01T18:00:39.185+05:30 DEBUG 61345 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2026-11-01T18:00:39.213+05:30 DEBUG 61345 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-11-01T18:00:39.222+05:30 DEBUG 61345 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-11-01T18:00:39.245+05:30 DEBUG 61345 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-11-01T18:00:39.279+05:30  INFO 61345 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-01T18:00:39.289+05:30  INFO 61345 --- [           main] com.zenith.events.EventsApplication      : Started EventsApplication in 0.927 seconds (process running for 1.183)
+2026-11-01T18:00:42.144+05:30  INFO 61345 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-01T18:00:42.144+05:30  INFO 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-01T18:00:42.144+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-11-01T18:00:42.144+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-11-01T18:00:42.144+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-11-01T18:00:42.145+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52cacbd1
+2026-11-01T18:00:42.145+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@113af2cc
+2026-11-01T18:00:42.145+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-11-01T18:00:42.145+05:30  INFO 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-01T18:00:42.151+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/events/0f14d0ab-9605-4a62-a9e4-5ed26688389b/publish", parameters={}
+2026-11-01T18:00:42.158+05:30 DEBUG 61345 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.zenith.events.EventController#publish(UUID)
+2026-11-01T18:00:42.170+05:30 DEBUG 61345 --- [nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.zenith.events.GlobalExceptionHandler#onDomainException(DomainException)
+2026-11-01T18:00:42.197+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-11-01T18:00:42.202+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiError[errorId=e2744b99-6654-4792-b1a7-7f0c8bd75f2f, status=422, code=event_not_publishable, messa (truncated)...]
+2026-11-01T18:00:42.213+05:30 DEBUG 61345 --- [nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.zenith.events.EventNotPublishableException: Event cannot be published: it has no price tier]
+2026-11-01T18:00:42.214+05:30 DEBUG 61345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 422 UNPROCESSABLE_ENTITY
+2026-11-01T18:00:42.214+05:30  INFO 61345 --- [nio-8080-exec-1] com.zenith.events.RequestLogFilter       : POST /events/0f14d0ab-9605-4a62-a9e4-5ed26688389b/publish -> 422 (66 ms)
+2026-11-01T18:00:42.249+05:30  INFO 61345 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-01T18:00:42.256+05:30  INFO 61345 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

@@ -1,0 +1,13 @@
+sealed interface Result permits Ok, Failed {}
+
+final class Ok implements Result {}
+
+// A plain class: it is ON the permits list, it DOES implement Result,
+// but it says nothing about its own subclasses.
+class Failed implements Result {}
+
+public class Doubt1Broken {
+    public static void main(String[] args) {
+        System.out.println("will not compile");
+    }
+}

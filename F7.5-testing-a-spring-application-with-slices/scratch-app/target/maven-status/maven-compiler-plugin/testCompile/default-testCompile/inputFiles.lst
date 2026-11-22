@@ -1,0 +1,11 @@
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L10ErrorShapeTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L11RepositorySliceTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L13EndToEndTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L1PlainJUnitTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L2FullContextStartsTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L3MockMvcTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L4FullContext404Test.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L5MockitoBasicsTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L6BeanCountTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L8SliceBeanCountTest.java
+/Users/pavankumar/projects/foundations/F7.5-testing-a-spring-application-with-slices/scratch-app/src/test/java/com/zenith/events/L8WebSlice404Test.java

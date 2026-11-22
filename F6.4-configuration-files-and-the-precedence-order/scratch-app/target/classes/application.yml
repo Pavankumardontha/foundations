@@ -1,0 +1,10 @@
+zenith:
+  hold:
+    ttl: PT10M
+    max-seats-per-order: 8
+  payments:
+    provider-url: ${PAYMENTS_URL:https://sandbox.payments.example.com}
+    supported-currencies:
+      - GBP
+      - EUR
+      - USD

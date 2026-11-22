@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.16</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.zenith</groupId>
+    <artifactId>slices-scratch</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- The web starter: brings Tomcat (the server), Spring MVC (the pipeline),
+             and Jackson (the JSON converter). One line, whole pipeline. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- Bean validation: the constraint annotations and the engine that checks them
+             (Hibernate Validator). Without this, @NotBlank and friends do not even exist. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <!-- Spring Data JPA: repositories, Hibernate, and the connection pool.
+             This task needs a persistence layer so the slice comparison is honest. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- H2: a small database that runs inside the JVM, no install needed.
+             The app and the tests use it. F7.5 also discusses why this is a
+             compromise (H2 is not Postgres). -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- The test kit: JUnit 5, Mockito, AssertJ, MockMvc, and the Spring
+             test annotations (@SpringBootTest, @WebMvcTest, @DataJpaTest). -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Makes `mvn package` produce a jar you can run with `java -jar`. -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- Exposes each dependency's jar path as a property, such as
+                 ${org.mockito:mockito-core:jar}. The surefire plugin below uses it. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Mockito rewrites classes while the JVM runs. On Java 21+ a library
+                 may no longer quietly attach itself to a running JVM, so we load
+                 Mockito as an agent at JVM start. This is the setup Spring Boot
+                 itself recommends. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>-javaagent:${org.mockito:mockito-core:jar} -Xshare:off</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
